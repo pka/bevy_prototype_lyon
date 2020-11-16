@@ -11,5 +11,6 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = "0.3.0"
+# use same version as bevy_webgl2
+bevy = {git = "https://github.com/bevyengine/bevy", rev = "7628f4a64e", default-features = false, features=["render"]}
 lyon = "0.16.0"
